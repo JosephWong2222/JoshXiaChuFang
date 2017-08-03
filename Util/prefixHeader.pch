@@ -1,0 +1,42 @@
+//
+//  prefixHeader.pch
+//  JoshXiaChuFang
+//
+//  Created by JacksonWong on 2017/7/31.
+//  Copyright © 2017年 JosephWong2. All rights reserved.
+//
+
+#ifndef prefixHeader_pch
+#define prefixHeader_pch
+
+#ifdef DEBUG
+#define JoshLog(...) NSLog(__VA_ARGS__)
+#else
+#define JoshLog(...)
+#endif
+
+#import "JoshConst.h"
+#import "UIView+JoshExtension.h"
+#import "UIColor+themeColor.h"
+
+#define JoshNotificationCenter  [NSNotificationCenter defaultCenter]
+
+#define JoshRootView  [UIApplication sharedApplication].keyWindow.rootViewController.view
+
+#define JoshKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define JoshScreenW [UIApplication sharedApplication].keyWindow.frame.size.width
+
+#define JoshScreenH [UIApplication sharedApplication].keyWindow.frame.size.height
+
+// 颜色
+#define JoshThemeColor [UIColor themeColor]
+
+#define JoshBackgroundColor  [UIColor backgroundColor]
+
+#define JoshTableViewBackgroundColor [UIColor tableViewBackgroundColor]
+
+#define JoshpageControllTintColor [UIColor pageControllTintColor]
+
+
+#endif /* prefixHeader_pch */
